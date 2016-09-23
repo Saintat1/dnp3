@@ -24,8 +24,28 @@ Copyright (c) 2013 - 2015 Automatak LLC
 
 Copyright (c) 2010 - 2015 various contributors
 
+Installation (For Windows)
+=============
 
-
-
-    
++ Install cmake: [cmake](https://cmake.org/).
++ Install Visual Studio 2013 or above. (Or other compiler like g++, but need to be supported by ASIO)
++ Install git if you don't have.
++ Open git and use the below command to copy opendnp3 documents.
+```git
+git clone --recursive https://github.com/automatak/dnp3.git
+```
++ Use below command to install dnp3, you can use <options> to define your dnp3 version.
+```git
+cmake ../dnp3 <options> 
+```
+| Option Name        | Comments           |
+| ------------- |:-------------:|
+| DEMO      | build the example programs |
+| TEST      | build the unit test suites     |
+| DNP3_TLS | build support for TLS channels (requires openssl)   |
+| DNP3_DECODER | 	build the dnp3decoder module      |
+| FULL | build ALL optional components      |
++ There should be several files in your root now, open the .sln file with Visual Studio.
++ Set master-demo as startup project (just an example), build it and a .exe file will be prodeced under ../Debug
++ Now you have successfully installed opendnp3
 
