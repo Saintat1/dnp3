@@ -49,3 +49,6 @@ cmake ../dnp3 <options>
 + Set master-demo as startup project (just an example), build it and a .exe file will be prodeced under ../Debug
 + Now you have successfully installed opendnp3
 
+Guidance
+========
+[dnp3 quick reference](http://read.pudn.com/downloads151/doc/comm/655523/DNP3QuickReference.pdf)
